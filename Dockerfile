@@ -73,4 +73,4 @@ RUN cd $OPENRAVE_BUILD_DIR && make install -j4
 # Run-time
 ##########
 
-RUN apt-get -y --force-yes --no-install-recommends install ipython
+RUN apt-get -y --force-yes --no-install-recommends install ipython python-scipy
