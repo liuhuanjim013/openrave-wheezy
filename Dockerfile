@@ -68,3 +68,9 @@ RUN mkdir -p $OPENRAVE_BUILD_DIR
 RUN cd $OPENRAVE_BUILD_DIR && cmake -DCMAKE_BUILD_TYPE=Release -DODE_USE_MULTITHREAD=ON -DOPT_IKFAST_FLOAT32=OFF $OPENRAVE_SOURCE_DIR
 RUN cd $OPENRAVE_BUILD_DIR && make -j4
 RUN cd $OPENRAVE_BUILD_DIR && make install -j4
+
+##########
+# Run-time
+##########
+
+RUN apt-get -y --force-yes --no-install-recommends install ipython
