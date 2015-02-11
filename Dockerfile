@@ -15,7 +15,7 @@ RUN apt-get -y --force-yes --no-install-recommends install libboost-dev libboost
 
 # git
 RUN apt-get -y --force-yes --no-install-recommends install git-core
-RUn git config --global http.sslVerify false
+RUN git config --global http.sslVerify false
 
 # build
 RUN apt-get -y --force-yes --no-install-recommends install cmake make wget bzip2 file
